@@ -78,22 +78,6 @@ Updates and deletions handled with real-time UI feedback.
 
 -----------------------------
 
-📦 Folder Structure
-Doctor-appointment-scheduling-system/
-├── src/                        # Java source files (Model, DAO, Service, Controller)
-│   └── com/example/...
-├── WebContent/                # JSP pages, CSS, JS files
-│   └── screenshots/           # (Optional) Screenshots for README/docs
-├── database/                  # MySQL DB script
-│   └── DocAppointments.sql
-├── lib/                       # External JAR libraries (if needed)
-├── .classpath                 # Eclipse config
-├── .project                   # Eclipse config
-├── .gitignore                 # Git ignored files
-└── README.md                  # This file
-
------------------------------
-
 🚀 How to Run
 
 1. Clone the repository:
