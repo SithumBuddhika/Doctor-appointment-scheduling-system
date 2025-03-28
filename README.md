@@ -75,3 +75,35 @@ Appointments are rendered dynamically with status options.
 Updates and deletions handled with real-time UI feedback.
 
 -----------------------------
+
+📦 Folder Structure
+Doctor-appointment-scheduling-system/
+├── src/                        # Java source files (Model, DAO, Service, Controller)
+│   └── com/example/...
+├── WebContent/                # JSP pages, CSS, JS files
+│   └── screenshots/           # (Optional) Screenshots for README/docs
+├── database/                  # MySQL DB script
+│   └── DocAppointments.sql
+├── lib/                       # External JAR libraries (if needed)
+├── .classpath                 # Eclipse config
+├── .project                   # Eclipse config
+├── .gitignore                 # Git ignored files
+└── README.md                  # This file
+
+-----------------------------
+
+🚀 How to Run
+
+1. Clone the repository:
+  git clone https://github.com/SithumBuddhika/Doctor-appointment-scheduling-system.git
+
+2.Open Eclipse → Import as an Existing Java EE Project
+
+3.Set up Apache Tomcat 10.1.26
+
+4.Create a MySQL database and import:
+  database/DocAppointments.sql
+
+5.Update DB credentials in DatabaseConnection.java
+
+6.Run the project on server and access JSP interfaces via browser
