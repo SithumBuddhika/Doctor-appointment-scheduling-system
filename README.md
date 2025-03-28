@@ -79,7 +79,6 @@ Updates and deletions handled with real-time UI feedback.
 -----------------------------
 
 🚀 How to Run
-
 1. Clone the repository:
   git clone https://github.com/SithumBuddhika/Doctor-appointment-scheduling-system.git
 
