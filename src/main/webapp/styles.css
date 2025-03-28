@@ -1,0 +1,240 @@
+@charset "UTF-8";
+:root {
+    --primary-color: #0065F3;
+    --secondary-color: #8a6fd7;
+    --background-color: #f0f2f5;
+    --text-color: #333;
+    --border-color: #d1d5db;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.dashboard-btn {
+    background-color:#007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.dashboard-btn:hover {
+    background-color: #7860b9;
+}
+
+.fa-chart-simple:before {
+    content: "\e473";
+    margin-left: 2px;
+    font-size: 28px;
+}
+
+main {
+    padding: 6px 0;
+}
+
+#appointmentForm {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    flex-basis: calc(50% - 10px);
+}
+
+.full-width {
+    flex-basis: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.btn-save {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.btn-save:hover {
+    background-color: var(--secondary-color);
+}
+
+footer {
+    margin-top: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .header-ribbon .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-ribbon h1 {
+        margin-bottom: 10px;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-group {
+        flex-basis: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+.error {
+            color: red;
+        }
+        
+ .fa-solid, .fas {
+    font-weight: 900;
+    font-size: 30px;
+}
+ /***************************/
+ 
+ .footer {
+    background-color:#007bff;
+    color: white;
+    padding: 48px 0;
+}
+.container1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 32px;
+}
+@media (min-width: 768px) {
+    .footer-content {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+.footer h3 {
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+.footer p, .footer address, .footer ul {
+    font-size: 14px;
+    color: #e6f2ff;
+}
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+.footer ul li {
+    margin-bottom: 8px;
+}
+.footer a {
+    color: #e6f2ff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.footer a:hover {
+    color: #ffd700;
+}
+.social-links {
+    display: flex;
+    gap: 16px;
+}
+.social-links a {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+.social-links svg {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+.footer-bottom {
+    margin-top: 32px;
+    padding-top: 32px;
+    border-top: 1px solid #3395ff;
+    text-align: center;
+}

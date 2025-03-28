@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.headerhd {
+    background-color: #f2f2f2;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    padding: 0.5rem 0.6rem;
+    margin: 0 auto;
+}
+
+.headerhd-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1rem;
+    margin-left: 1.5rem;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.logo {
+    font-size: 30px;
+    color: #000000;
+    text-decoration: none;
+        
+    font-family: "Open Sans", sans-serif;
+	  font-optical-sizing: auto;
+	  font-weight: bold;
+	  font-style: normal;
+	  font-variation-settings: "wdth" 100;
+}
+
+.logo span{
+	color: #007bff;
+}
+
+.logo:hover {
+    color: #007bff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    
+}
+
+.logo:hover span{
+	color: #000000;
+}
+
+.btnhd {
+    padding: 0.3rem 0.8rem;
+    border-radius: 9999px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    background-color: #000000;
+	color: #ffffff;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    border: 1px solid #b6b6b6;
+}
+
+.btnhd:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+#logout:hover{
+	background-color: #f00000;
+    color: #470303;
+    border: 1px solid #000000;
+}

@@ -1,0 +1,379 @@
+@charset "UTF-8";
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.tabs {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    overflow: hidden;
+}
+
+.tabs-list {
+    display: flex;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.tab-trigger{
+    padding: 12px 16px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: #7f8c8d;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    flex: 1;
+    text-align: center;
+}
+
+.tab-trigger:hover {
+    color: #2c3e50;
+    background-color: #f5f5f5;
+}
+
+.tab-trigger .active{
+    color: #2c3e50;
+    background-color: #e0e0e0;
+}
+
+.tab-trigger .active{
+    color: #2c3e50;
+    background-color:  #7f8c8d;
+}
+
+.tab-trigger a{
+	text-decoration : none;
+}
+
+.tab-content {
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.card-header {
+    padding: 16px 20px;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #f5f5f5;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #2c3e50;
+}
+
+.card-description {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin: 8px 0 0;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.scroll-area {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.appointment-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 16px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.appointment-card:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.appointment-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.appointment-time, .appointment-status {
+    font-size: 14px;
+    color: #7f8c8d;
+}
+
+.appointment-info {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-bottom: 12px;
+}
+
+.appointment-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.btn {
+    padding: 6px 12px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+.btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn a :hover {
+    color: #fff;
+}
+
+.btn-sm {
+    padding: 4px 8px;
+    font-size: 13px;
+}
+
+.btn-icon {
+    margin-left: 4px;
+    font-size: 16px;
+}
+
+.dialog {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.dialog-content {
+    background-color: #fff;
+    width: 90%;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dialog-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 8px;
+    color: #2c3e50;
+}
+
+.dialog-description {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #2c3e50;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    gap: 8px;
+}
+
+.btn-primary {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+.btn-primary:hover {
+    background-color: #333;
+}
+
+.btn-secondary {
+    background-color: #fff;
+    color: #000;
+    border-color: #000;
+}
+
+.btn-secondary:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+#appointmentDetails {
+    margin-top: 20px;
+}
+
+#appointmentDetails div {
+    margin-bottom: 10px;
+    color: #7f8c8d;
+}
+
+#appointmentDetails label {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #2c3e50;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #bdc3c7;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #95a5a6;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:-webkit-any-link :hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.fa-notes-medical:before {
+    content: "\f481";
+    font-size: 30px;
+}
+
+.fa-solid, .fas {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.btndd {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin: 0 0 12px;
+}
+
+.btndd:hover {
+    background-color: #7860b9;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-sm delete-btn a :hover {
+    color: #fff;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-icon {
+    margin-left: 4px;
+    font-size: 15px;
+}
+
+.delete-btn a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.delete-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.delete-btn:hover .btn-icon {
+    color: white;
+}
+
+.fa-book:before {
+    content: "\f02d";
+    margin-right: 10px;
+}
