@@ -2,7 +2,7 @@
 This system enables doctors to manage their appointment availability, schedule sessions, and update booking statuses through a clean, intuitive dashboard. Built using Java EE, it’s designed to simulate real-world hospital workflows and follows clean architectural principles like MVC, DAO, and service layer abstraction.
 
 > 🎯 Focus Module: Doctor Appointment Scheduling
-> 👨‍⚕️ Role: Doctor Implementation (Developed by Sithum Buddhika)
+> 👨‍⚕️ Role: Doctor Appointment Scheduling System Implementation (Developed by Sithum Buddhika)
 > 📅 Development: Agile Environment using Jira
 
 -----------------------------
